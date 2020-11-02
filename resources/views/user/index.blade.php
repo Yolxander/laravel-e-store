@@ -25,7 +25,7 @@
                         {{-- {{ menu('main', 'partials.menus.main') }} --}}
                     </div>
                     <div class="top-nav-right">
-                        {{-- @include('partials.menus.main-right') --}}
+                        @include('layouts.menu-right')
                     </div>
                 </div> <!-- end top-nav -->
                 <div class="hero container">
@@ -52,7 +52,7 @@
                     <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vitae nisi, consequuntur illum dolores cumque pariatur quis provident deleniti nesciunt officia est reprehenderit sunt aliquid possimus temporibus enim eum hic lorem.</p>
 
                     
-{{-- 
+
                     <div class="products text-center">
                         @foreach ($products as $product)
                             <div class="product">
@@ -62,7 +62,7 @@
                             </div>
                         @endforeach
 
-                    </div> <!-- end products --> --}}
+                    </div> <!-- end products 
 
                    
 
