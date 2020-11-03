@@ -37,7 +37,7 @@
     <div class="product-section container">
         <div>
             <div class="product-section-image">
-                <img src="" alt="product" class="active" id="currentImage">
+                <img src="/img/macbook-pro.png"  alt="product" class="active" id="currentImag">
             </div>
            
         </div>
