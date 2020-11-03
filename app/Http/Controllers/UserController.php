@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -12,6 +13,7 @@ class UserController extends Controller
     }
     public function index()
     {
-        return view('user.index');
+        $products = Product::inRandomOrder()->take(8)->get();
+        return view('user.index')->with('products', $products);
     }
 }

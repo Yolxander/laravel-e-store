@@ -48,9 +48,9 @@
 
           
           <td>{{$procat->name}}</td>
-          <td> </td>
           <td>{{$procat->price}}</td>
-          <td>{{$procat->status}}</td>
+          <td>{{$procat->slug}}</td>
+          <td>{{$procat->details}}</td>
           <td>{{$procat->description}}</td>
 
 

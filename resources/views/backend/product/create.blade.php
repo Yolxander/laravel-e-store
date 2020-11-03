@@ -39,7 +39,7 @@
             <label class="col-form-label col-md-3 col-sm-3 label-align" >Slug<span class="required">*</span>
             </label>
             <div class="col-md-6 col-sm-6 ">
-              <input type="text" id="name" name="name" required="required" class="form-control ">
+              <input type="text" id="name" name="slug" required="required" class="form-control ">
             </div>
           </div>
 
@@ -68,7 +68,7 @@
             <label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">Details<span class="required">*</span>
             </label>
             <div class="col-md-6 col-sm-6 ">
-                <textarea id="message" required="required" class="form-control" name="description" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="50" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10">
+                <textarea id="details" required="required" class="form-control" name="details" data-parsley-trigger="keyup" data-parsley-minlength="5" data-parsley-maxlength="10" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10">
                 </textarea>
             </div>
           </div>
