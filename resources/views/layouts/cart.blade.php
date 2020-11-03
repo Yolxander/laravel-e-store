@@ -57,13 +57,9 @@
 
                         </div>
                         <div>
-                            <select class="quantity" data-id="{{ $item->rowId }}" data-productQuantity="{{ $item->model->quantity }}">
-                                @for ($i = 1; $i < 5 + 1 ; $i++)
-                                    <option {{ $item->qty == $i ? 'selected' : '' }}>{{ $i }}</option>
-                                @endfor
-                            </select>
+                            {{ $item->qty }}
                         </div>
-                        <div>{{ $item->subtotal }}</div>
+                        <div>${{ $item->subtotal }}</div>
                     </div>
                 </div> <!-- end cart-table-row -->
                 @endforeach

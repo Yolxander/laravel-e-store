@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel Ecommerce </title>
+        <title>E-store </title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
@@ -30,7 +30,7 @@
                 </div> <!-- end top-nav -->
                 <div class="hero container">
                     <div class="hero-copy">
-                        <h1>Laravel Ecommerce </h1>
+                        <h1>E-store </h1>
                         <p>It's a small laptop shop that i created while having fun and learning with Laravel</p>
                         <div class="hero-buttons">
                             <a href="{{ route('shop.index')}}" class="button button-white">Shop Now</a>
