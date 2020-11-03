@@ -5,7 +5,7 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class ExampleTest extends TestCase
+class AdminTest extends TestCase
 {
     /**
      * A basic test example.
@@ -14,8 +14,11 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $response = $this->get('/');
+        $response = $this->get('/admin');
+        
+        $response->assertStatus(403);
 
-        $response->assertStatus(200);
+
     }
+
 }

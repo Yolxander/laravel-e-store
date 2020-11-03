@@ -66,7 +66,7 @@
             <label class="col-form-label col-md-3 col-sm-3 label-align" for="first-name">Details<span class="required">*</span>
             </label>
             <div class="col-md-6 col-sm-6 ">
-                <textarea value="" id="message" required="required" class="form-control" name="description" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10">
+                <textarea value="" id="message" required="required" class="form-control" name="details" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10">
                     {{$product->details}}
                 </textarea>
             </div>
@@ -75,8 +75,8 @@
           <div class="ln_solid"></div>
           <div class="item form-group">
             <div class="col-md-6 col-sm-6 offset-md-3">
-              <button class="btn btn-primary" type="button">Cancel</button>
-              <button class="btn btn-primary" type="reset">Reset</button>
+              {{-- <button class="btn btn-primary" type="button">Cancel</button>
+              <button class="btn btn-primary" type="reset">Reset</button> --}}
               <button type="submit" class="btn btn-success">Submit</button>
             </div>
           </div>
