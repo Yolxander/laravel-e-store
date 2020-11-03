@@ -74,21 +74,16 @@
 
             <div class="cart-totals">
                 <div class="cart-totals-left">
-                    Shipping is free because we’re awesome like that. Also because that’s additional stuff I don’t feel like figuring out :).
+                    Shipping is free because we’re awesome like that. Also because that’s additional stuff and will take me longer :).
                 </div>
 
                 <div class="cart-totals-right">
                     <div>
-                        Total <br>
-                        <span class="cart-totals-total">Total</span>
+                        {{-- for simplicity reason a didnt add any function to calculate taxess or shipping --}}
+                        <span class="cart-totals-total">Total:</span> &nbsp;
+                        ${{ Cart::subtotal() }} <br>
                     </div>
-                    <div class="cart-totals-subtotal">
-                        {{ Cart::subtotal() }} <br>
-                        <hr>
-                            {{-- {{ $newSubtotal }} <br>
-                        {{ $newTax }} <br> --}}
-                        {{-- <span class="cart-totals-total">{{ $newTotal }}</span> --}}
-                    </div>
+                    
                 </div>
             </div> <!-- end cart-totals -->
 

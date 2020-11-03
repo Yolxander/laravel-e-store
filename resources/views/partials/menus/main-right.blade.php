@@ -1,7 +1,16 @@
 <ul>
     @guest
-    <li><a href="">Sign Up</a></li>
-    <li><a href="">Login</a></li>
+    <div >
+        @auth
+            <a href="{{ url('/user') }}" class="text-sm text-gray-700 underline">Shop</a>
+        @else
+            <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>&nbsp;
+
+            @if (Route::has('register'))
+                <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+            @endif
+        @endif
+    </div>
     @else
     <li>
         <a href="{{ route('logout') }}"
@@ -16,10 +25,11 @@
     <form id="logout-form" action="" method="POST" style="display: none;">
         {{ csrf_field() }}
     </form>
-    @endguest
     <li><a href="{{ route('cart.index') }}">Cart
-    @if (Cart::instance('default')->count() > 0)
-    <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
-    @endif
-    </a></li>
+        @if (Cart::instance('default')->count() > 0)
+        <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
+        @endif
+        </a></li>
+    @endguest
+    
 </ul>
